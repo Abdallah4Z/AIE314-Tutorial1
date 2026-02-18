@@ -1,11 +1,11 @@
 # AI-based-programming-tutorial1
 
 ## Team Members
-- [Abdallah Zain](https://github.com/Abdallah4Z)
-- [Ahmed Islam](https://github.com/ahmedislamfarouk)
-- [Alaaelddin Ibrahim](https://github.com/alaaelddin11)
-- [Belal Fathy](https://github.com/belal212)
-- [Rana Mousa](https://github.com/RanaMousa1)
+- [Abdallah Zain 22100848](https://github.com/Abdallah4Z)
+- [Ahmed Islam 22101008](https://github.com/ahmedislamfarouk)
+- [Alaaelddin Ibrahim 22101463](https://github.com/alaaelddin11)
+- [Belal Fathy 22101311](https://github.com/belal212)
+- [Rana Mousa 22101478](https://github.com/RanaMousa1)
 
 ## Project Description
 This project implements a preprocessing pipeline for unstructured data to be used in LLM applications. The pipeline can extract and normalize data from various document types (PDF, Word, Excel, PowerPoint, EPUB) into a standardized JSON format with metadata enrichment.
