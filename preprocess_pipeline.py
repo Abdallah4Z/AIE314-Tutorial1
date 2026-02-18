@@ -37,7 +37,14 @@ def extract_text_from_docx(docx_path):
 def extract_tables_from_excel(excel_path):
     """Extract tables from Excel files."""
     excel_data = pd.read_excel(excel_path, sheet_name=None)
-    tables = {sheet: df.to_dict(orient='records') for sheet, df in excel_data.items()}
+    tables = {}
+    for sheet, df in excel_data.items():
+        # Convert datetime/timestamp columns to strings for JSON serialization
+        df_copy = df.copy()
+        for col in df_copy.columns:
+            if pd.api.types.is_datetime64_any_dtype(df_copy[col]):
+                df_copy[col] = df_copy[col].astype(str)
+        tables[sheet] = df_copy.to_dict(orient='records')
     return tables
 
 
